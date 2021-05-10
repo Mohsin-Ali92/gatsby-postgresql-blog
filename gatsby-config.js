@@ -19,12 +19,11 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.DEPLOY_URL
-          ? "https://gatsby-strapi-postgresql-blog.herokuapp.com"
+          ? "https://gatsby-postgresql-blog.herokuapp.com"
           : "https://localhost:1337",
-
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
-          "articles",
+          "article",
           "user",
         ],
         queryLimit: 1000,
